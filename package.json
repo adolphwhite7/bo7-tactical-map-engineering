@@ -1,0 +1,12 @@
+{
+  "name": "bo7-tactical-map-engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Selected tactical-map application source and an executable coordinate-engine review example",
+  "scripts": {
+    "test": "node --test examples/coordinate-review.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
