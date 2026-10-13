@@ -1,6 +1,8 @@
-# BO7 Tactical Map Engineering
+# Call of Duty: Black Ops 7 Tactical Map Engineering
 
 Selected engineering work from **BO7 Tactical Map Guide**, an Expo and React Native application for exploring tactical maps, strategic points of interest, and game-mode objectives.
+
+Created and owned by Adolph White Jr., including the requirements, architecture, map interaction and calibration model, and code review. Built with the use of AI tools.
 
 The engineering challenge is keeping map imagery, interactive markers, labels, and tactical detail views aligned while the viewport, orientation, and zoom level change. This repository exposes the application code behind that work, together with an executable coordinate example that needs no external service.
 
