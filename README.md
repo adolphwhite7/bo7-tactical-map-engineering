@@ -1,4 +1,4 @@
-# Call of Duty: Black Ops 7 Tactical Map Engineering
+# Call of Duty: Black Ops 7 Tactical Map App 
 
 Selected engineering work from **BO7 Tactical Map Guide**, an Expo and React Native application for exploring tactical maps, strategic points of interest, and game-mode objectives.
 
