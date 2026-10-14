@@ -23,7 +23,7 @@ The engineering challenge is keeping map imagery, interactive markers, labels, a
 1. **Start with the interaction model:** open [MapScreen.tsx](client/screens/MapScreen.tsx) and find `rawToDisplay` / `displayToRaw`. The engineering decision is to keep stored playable-area positions distinct from image-space positions.
 2. **Follow the user action:** review [CalibratableDot.tsx](client/components/CalibratableDot.tsx) and [POIMarkerLabel.tsx](client/components/POIMarkerLabel.tsx) to see how dragging and readable labels connect to those positions.
 3. **Follow the content:** open [POIDetailModal.tsx](client/screens/POIDetailModal.tsx) and [ratingsService.ts](client/services/ratingsService.ts) for the detail-screen and state-update boundaries.
-4. **Run the focused example below:** six synthetic checks exercise the coordinate module directly.
+4. **Run the focused example below:** six checks exercise the coordinate module directly.
 
 Continue with the [engineering walkthrough](docs/ENGINEERING_WALKTHROUGH.md) for the data flow and design tradeoffs.
 
@@ -34,7 +34,7 @@ flowchart LR
   Calibration["Drag calibration<br/>local persistence"] <--> Map
   Map --> Detail["Tactical detail<br/>SVG scoring and ratings"]
   Detail --> Ratings["Ratings service<br/>Firebase integration"]
-  Synthetic["Synthetic coordinate example"] --> Math
+  Example["Coordinate example"] --> Math
 ```
 
 ## Run the coordinate example
@@ -47,7 +47,7 @@ node --test examples/coordinate-review.test.js
 
 Alternatively, run `npm test`. No dependency installation, account, model, image download, or network access is required.
 
-Six checks exercise asymmetric border offsets, inverse conversion, pixel conversion, portrait and landscape layout, and maps without offsets. The inputs are explicitly synthetic. The check imports the existing coordinate module unchanged; it demonstrates those calculations, not the full mobile interface.
+Six checks exercise asymmetric border offsets, inverse conversion, pixel conversion, portrait and landscape layout, and maps without offsets. The example imports the existing coordinate module unchanged; it demonstrates those calculations, not the full mobile interface.
 
 ## My contribution
 

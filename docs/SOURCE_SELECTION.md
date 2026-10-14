@@ -4,7 +4,7 @@
 
 The `client/` directory contains selected application source for screens, navigation, map interactions, tactical components, themes, hooks, ratings, image prefetching, and error reporting. `scripts/map-coordinate-algorithm.js` is the application's standalone coordinate utility. These selected source files retain their original contents.
 
-`examples/coordinate-review.test.js`, the small root package manifest, and this documentation were added for this engineering review package. The example imports the existing coordinate utility and supplies invented dimensions and points; it does not substitute synthetic content for the app's original game datasets.
+`examples/coordinate-review.test.js`, the small root package manifest, and this documentation were added for this engineering review package. The example imports the existing coordinate utility and supplies example dimensions and points. The app's original game datasets remain outside this package.
 
 ## Application boundaries
 

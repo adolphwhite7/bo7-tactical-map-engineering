@@ -12,7 +12,7 @@ displayX = left + (rawX / 100) × (100 − left − right)
 
 The inverse transform removes the margin and rescales the remaining width. Vertical coordinates apply the same reasoning with top and bottom margins. [MapScreen.tsx](../client/screens/MapScreen.tsx) contains the UI transforms; the independent [coordinate module](../scripts/map-coordinate-algorithm.js) documents and exposes the conversion workflow for external calibration.
 
-The [synthetic example](../examples/coordinate-review.test.js) deliberately uses unequal margins so that swapping axes or assuming a centered playable area would produce the wrong answer. It also checks a known pixel position and both directions of aspect-preserving viewport layout. The module rounds inverse coordinates to two decimal places and pixel results to whole pixels.
+The [coordinate example](../examples/coordinate-review.test.js) deliberately uses unequal margins so that swapping axes or assuming a centered playable area would produce the wrong answer. It also checks a known pixel position and both directions of aspect-preserving viewport layout. The module rounds inverse coordinates to two decimal places and pixel results to whole pixels.
 
 ## Rendering and interaction
 

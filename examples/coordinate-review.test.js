@@ -1,5 +1,5 @@
-// Synthetic review examples for the unchanged application coordinate module.
-// These dimensions and positions are invented; no game data or service is used.
+// Review examples for the unchanged application coordinate module.
+// Example dimensions and positions; no game data or service is used.
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const {
@@ -21,7 +21,7 @@ test('display coordinates recover stored positions with documented rounding', ()
   assert.deepEqual(displayToRaw(displayed.x, displayed.y, border), raw);
 });
 
-test('synthetic image pixel and raw conversions agree at a known position', () => {
+test('example image pixel and raw conversions agree at a known position', () => {
   assert.deepEqual(rawToPixel(25, 75, 1000, 800, border), { x: 275, y: 520 });
   assert.deepEqual(pixelToRaw(275, 520, 1000, 800, border), { x: 25, y: 75 });
 });
